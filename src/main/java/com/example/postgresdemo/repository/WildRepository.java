@@ -8,4 +8,5 @@ import com.example.postgresdemo.model.Wild;
 @Repository
 public interface WildRepository extends JpaRepository<Wild, Long>{
 
+	Wild findByAnimalId(Long animalId);
 }
